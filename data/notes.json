@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "date": "2026-06-26 17:14",
+    "content": "AI Powered multi-tenant HR SaaS project is 50% complete, still in development phase",
+    "tags": [
+      "business",
+      "project"
+    ]
+  },
+  {
+    "id": 2,
+    "date": "2026-06-26 17:20",
+    "content": "Ava development is 15% complete, still in progress",
+    "tags": [
+      "personal",
+      "development"
+    ]
+  },
+  {
+    "id": 3,
+    "date": "2026-06-26 17:21",
+    "content": "User has a surprise plan for Ava's development",
+    "tags": [
+      "personal",
+      "development"
+    ]
+  },
+  {
+    "id": 4,
+    "date": "2026-06-27 06:26",
+    "content": "Note about art change 25",
+    "tags": [
+      "art",
+      "change"
+    ]
+  },
+  {
+    "id": 5,
+    "date": "2026-06-29 15:50",
+    "content": "Design a new interface for myself",
+    "tags": [
+      "project",
+      "interface design"
+    ]
+  }
+]

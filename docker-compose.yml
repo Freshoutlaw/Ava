@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  ava:
+    build: .
+    image: ava-assistant
+    container_name: ava
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "7333:7333"   # Web UI dashboard
+      - "7334:7334"   # WebSocket bridge
+    volumes:
+      - ./data:/app/data        # Persist memory, goal, notes, audit log
+      - ./config.json:/app/config.json
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7333/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

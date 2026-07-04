@@ -1,0 +1,56 @@
+# Ava — Python dependencies (Tiers 1-20)
+# Install core first, then add tier-specific packages as needed.
+
+# ── Core (always required) ───────────────────────────────────────────────────
+groq>=0.9.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# ── Tier 3 — Voice ────────────────────────────────────────────────────────────
+sounddevice>=0.4.0
+deepgram-sdk>=3.7.0
+miniaudio>=1.5.0
+numpy>=1.24.0
+
+# ── Tier 10 — UI ──────────────────────────────────────────────────────────────
+websockets>=12.0
+pywebview>=4.4.1
+# tkinter ships with Python — kept as automatic fallback if pywebview fails
+# React build requires Node.js separately — see ui_react/BUILD_INSTRUCTIONS.md
+
+# ── Tier 14 — System Automation ──────────────────────────────────────────────
+psutil>=5.9.0
+pyautogui>=0.9.54
+pyperclip>=1.8.2
+Pillow>=10.0.0
+
+# ── Tier 15 — Kali Linux ──────────────────────────────────────────────────────
+# No new Python packages — uses subprocess to reach WSL/SSH/Docker.
+# Setup required separately (see setup.py output).
+
+# ── Tier 16 — Browser Automation ─────────────────────────────────────────────
+playwright>=1.40.0
+# After install, also run: playwright install chromium
+
+# ── Tier 17 — Communications ─────────────────────────────────────────────────
+twilio>=8.10.0
+# Email uses stdlib smtplib/imaplib — no extra package
+# WhatsApp requires separate Node.js bridge (whatsapp-web.js)
+
+# ── Tier 18 — Vision / OCR ────────────────────────────────────────────────────
+pytesseract>=0.3.10
+PyMuPDF>=1.23.0
+# Also install Tesseract OCR engine separately:
+#   Windows: https://github.com/UB-Mannheim/tesseract/wiki
+#   Linux:   sudo apt install tesseract-ocr
+
+# ── Tier 19-20 — Workflows / Autonomous ──────────────────────────────────────
+# No new packages — built on existing tools/agents
+
+# ── Daemon (Windows background service) ──────────────────────────────────────
+pywin32>=306
+
+# ── Notes ─────────────────────────────────────────────────────────────────────
+# pyautogui requires running as Administrator for some system-level actions.
+# If pip install pyaudio/pyautogui fails on Windows, ensure you have
+# Microsoft C++ Build Tools installed.

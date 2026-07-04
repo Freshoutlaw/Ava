@@ -1,0 +1,12 @@
+{
+  "reply_length": "concise",
+  "tone": "warm and plain-spoken",
+  "peak_hour": 3,
+  "top_topics": [
+    "delegate_to_coder",
+    "show_memory",
+    "start_app"
+  ],
+  "voice_preferred": true,
+  "last_updated": "2026-07-01T15:38:27.543107"
+}

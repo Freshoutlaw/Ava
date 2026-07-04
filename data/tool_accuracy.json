@@ -1,0 +1,66 @@
+{
+  "show_memory": {
+    "calls": 3,
+    "failures": 0
+  },
+  "get_goal": {
+    "calls": 1,
+    "failures": 0
+  },
+  "remember_fact": {
+    "calls": 1,
+    "failures": 0
+  },
+  "draft_message": {
+    "calls": 2,
+    "failures": 0
+  },
+  "web_search": {
+    "calls": 2,
+    "failures": 0
+  },
+  "add_note": {
+    "calls": 1,
+    "failures": 0
+  },
+  "file_read": {
+    "calls": 4,
+    "failures": 0
+  },
+  "run_command": {
+    "calls": 1,
+    "failures": 0
+  },
+  "file_write": {
+    "calls": 1,
+    "failures": 0
+  },
+  "see_me": {
+    "calls": 2,
+    "failures": 0
+  },
+  "start_app": {
+    "calls": 3,
+    "failures": 0
+  },
+  "screenshot": {
+    "calls": 1,
+    "failures": 0
+  },
+  "type_text": {
+    "calls": 1,
+    "failures": 0
+  },
+  "operate_computer": {
+    "calls": 1,
+    "failures": 0
+  },
+  "tell_user": {
+    "calls": 3,
+    "failures": 0
+  },
+  "think": {
+    "calls": 1,
+    "failures": 0
+  }
+}

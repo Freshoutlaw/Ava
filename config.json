@@ -1,0 +1,61 @@
+{
+  "_comment": "Ava config — edit freely, no code changes needed",
+
+  "model": "llama-3.3-70b-versatile",
+  "max_tokens": 2048,
+  "ava_name": "Ava",
+  "ptt_key": "space",
+
+  "audio": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "chunk": 1024,
+    "dtype": "int16",
+    "min_recording_seconds": 0.5
+  },
+
+  "heartbeat": {
+    "enabled": true,
+    "poll_interval_seconds": 60,
+    "quiet_hours_start": "00:00",
+    "quiet_hours_end": "07:00",
+    "checks": [
+      {
+        "id": "goal_nudge",
+        "label": "Revenue goal nudge",
+        "enabled": true,
+        "interval_minutes": 120,
+        "priority": "low"
+      },
+      {
+        "id": "daily_brief",
+        "label": "Daily briefing",
+        "enabled": true,
+        "interval_minutes": 480,
+        "priority": "low"
+      }
+    ]
+  },
+
+  "confirmation_gate": {
+    "enabled": true,
+    "timeout_seconds": 60,
+    "protected_actions": [
+      "send any message",
+      "spend money",
+      "delete data",
+      "change settings",
+      "commit to git",
+      "post publicly",
+      "leak sensitive data"
+    ]
+  },
+
+  "audit_log": {
+    "enabled": true,
+    "path": "data/ava_audit.log",
+    "log_tool_calls": true,
+    "log_heartbeat": true,
+    "log_confirmations": true
+  }
+}
